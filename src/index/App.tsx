@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import ProfileContainer from 'containers/ProfileContainer';
-import PostContainer from 'containers/PostContainer';
-import Spinner from 'components/common/Spinner';
+import ProfileContainer from 'index/containers/ProfileContainer';
+import PostContainer from 'index/containers/PostContainer';
+import Spinner from 'index/components/common/Spinner';
 import './App.scss';
 
 type Props = {
