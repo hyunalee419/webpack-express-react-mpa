@@ -5,7 +5,8 @@
   "scripts": {
     "build": "webpack --mode=production",
     "watch": "webpack --mode=development --watch",
-    "start": "npm run watch"
+    "server": "babel-node server",
+    "start": "npm run watch & npm run server"
   },
   "repository": {
     "type": "git",
@@ -13,7 +14,9 @@
   },
   "homepage": "https://github.com/hyunalee419/webpack-IE-polyfill#readme",
   "dependencies": {
+    "@babel/cli": "7.4.4",
     "@babel/core": "7.4.4",
+    "@babel/node": "7.2.2",
     "@babel/polyfill": "7.4.4",
     "@babel/preset-env": "7.4.4",
     "@babel/preset-react": "7.0.0",
@@ -21,6 +24,7 @@
     "@types/react-loadable": "5.5.1",
     "babel-loader": "8.0.5",
     "css-loader": "2.1.1",
+    "express": "4.16.4",
     "node-sass": "4.12.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",

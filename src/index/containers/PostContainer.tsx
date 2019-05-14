@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { SetIsSpinFull } from 'actions';
-import Posts from 'components/Posts';
+import { SetIsSpinFull } from 'index/actions';
+import Posts from 'index/components/Posts';
 
 type Props = {
   setIsSpinFull?: (isSpinFull: boolean) => void;
